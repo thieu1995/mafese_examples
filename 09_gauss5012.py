@@ -27,7 +27,7 @@ list_paras = [
     {"name": "AAEO", "epoch": EPOCH, "pop_size": POP_SIZE},
     {"name": "RUN", "epoch": EPOCH, "pop_size": POP_SIZE},
 ]
-feat_selector = MultiMhaSelector(problem="classification", estimator=ESTIMATOR,
+feat_selector = MultiMhaSelector(problem="regression", estimator=ESTIMATOR,
                             list_optimizers=list_optimizers, list_optimizer_paras=list_paras,
                             transfer_func="vstf_01", obj_name="RMSE")
 
